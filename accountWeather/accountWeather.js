@@ -1,13 +1,6 @@
 import { LightningElement, api, wire } from 'lwc';
-// import { getRecord } from 'lightning/uiRecordApi';
-// import NAME_FIELD from '@salesforce/schema/Account.Name';
-import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 import { refreshApex } from '@salesforce/apex';
-import BILLING_ADDRESS from '@salesforce/schema/Account.BillingAddress';
-// import CURRENT_WEATHER from '@salesforce/schema/Account.AccountCurrentWeather__c';
-// import BILLING_LAT from '@salesforce/schema/Account.BillingLongitude';
-// import BILLING_LONG from '@salesforce/schema/Account.BillingLatitude';
 
 export default class AccountWeather extends LightningElement {
     @api recordId;
